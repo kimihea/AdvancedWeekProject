@@ -46,6 +46,7 @@ class House : MonoBehaviour
     }
     private void Interact(Interior interior)
     {
+        //close to object and press interactkey
         if (interior.interiorType == InteriorType.trophy) return;
         if (interior.interiorType == InteriorType.chest)
         {
