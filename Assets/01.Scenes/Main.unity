@@ -1971,6 +1971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   revivePos: {fileID: 372655429}
+  gold: {fileID: 0}
 --- !u!4 &383181754
 Transform:
   m_ObjectHideFlags: 0

@@ -95,6 +95,7 @@ public class GameManager : MonoBehaviour
     #endregion
     [SerializeField] private SaveManager saveManager;
     public GameData nowData;
+    
     public void SaveGame()
     {
         saveManager.SaveData(nowData);
@@ -118,14 +119,20 @@ public class GameManager : MonoBehaviour
     {
         soundManager.PlaySFX(target);
     }
+
+    #region util
     public void StopControl()
     {
         Controller.Instacne.pause = !Controller.Instacne.pause;
     }
-    
+    public GameObject EndPanl;
+    public void TheEnd()
+    {
+        EndPanl.SetActive(true);
+    }
 
     [SerializeField] private DataManager dataManager;
 
-
+    #endregion
 
 }

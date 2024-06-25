@@ -15,10 +15,11 @@ public class Controller : MonoBehaviour
     public bool pause = false;
 
     public CharacterStatHandler stats { get; private set; }
-
+    public PlayerStateController state;
     protected virtual void Awake()
     {
         stats = GetComponent<CharacterStatHandler>();
+        state = GetComponent<PlayerStateController>();
         if (Instacne != null)
         {
             Destroy(gameObject);

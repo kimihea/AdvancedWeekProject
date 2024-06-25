@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 654e0a4703e4a8148acecf4ddf53d823, type: 3}
   m_Name: CoinItem
   m_EditorClassIdentifier: 
-  type: 0
+  type: 4
   displayName: 
   displayInfo: 
   icon: {fileID: 0}

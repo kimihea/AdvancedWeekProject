@@ -18,8 +18,10 @@ public class MainUI : MonoBehaviour
     }
     public void MoveDungeon()
     {
+        gm.nowData.fatigue++;
         gm.MoveScene(2);
         gm.PlaySFX(SFXEnum.UI_CLICK);
+        Controller.Instacne.state.EnterDungeon();
     }
     public void MoveFarm()
     {
