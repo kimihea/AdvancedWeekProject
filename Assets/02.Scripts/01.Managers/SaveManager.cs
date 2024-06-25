@@ -9,12 +9,12 @@ using System.IO;
 public class GameData
 {
     public int Gold;
-    public CharacterStatHandler stat;
+    public MonsterStatHandler stat;
     public int nowStage;
 
     public GameData()
     {
-        stat = new CharacterStatHandler();
+        
     }
 }
 public class SaveManager : MonoBehaviour

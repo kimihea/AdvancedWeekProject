@@ -14,7 +14,7 @@ public class Controller : MonoBehaviour
     protected bool IsAttacking { get; set; }
     public bool pause = false;
 
-    protected CharacterStatHandler stats { get; private set; }
+    public CharacterStatHandler stats { get; private set; }
 
     protected virtual void Awake()
     {

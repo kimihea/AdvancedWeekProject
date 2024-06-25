@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4689462691010994504}
   - component: {fileID: 962771922359876062}
   - component: {fileID: 5971631012270565544}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1409100170727259258}
   - component: {fileID: 7252989202025742003}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Weapon_arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}

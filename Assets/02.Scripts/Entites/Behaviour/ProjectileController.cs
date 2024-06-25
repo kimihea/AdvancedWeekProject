@@ -11,7 +11,7 @@ internal class ProjectileController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private TrailRenderer trailRenderer;
 
-    private RangedAttackSO attackData;
+    public RangedAttackSO attackData;
     private float currentDuration;
     private Vector2 direction;
     public bool fxOnDestory = true;
@@ -84,6 +84,7 @@ internal class ProjectileController : MonoBehaviour
         }
         else if (IsLayerMatched(attackData.target.value, collision.gameObject.layer))
         {
+            GameManager.Instance.PlaySFX(SFXEnum.HIT);
             DestroyProjectile(collision.ClosestPoint(transform.position), fxOnDestory);
         }
     }

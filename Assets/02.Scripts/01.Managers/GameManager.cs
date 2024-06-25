@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour
     Coroutine AlertCoroutine;
     public void ShowAlert(string message)
     {
-        PlaySFX(SFXEnum.Alert);
+        PlaySFX(SFXEnum.ALERT);
         AlertText.text = message;  
         AlertObj.SetActive(true);
         if (AlertCoroutine != null) StopCoroutine(AlertCoroutine);

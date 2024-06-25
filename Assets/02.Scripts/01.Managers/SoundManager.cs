@@ -81,8 +81,9 @@ public enum SFXEnum
 {
     UI_CLICK,
     UI_CLOSE,
-    Alert,
+    ALERT,
     ATTACK,
-    Get,
-    DEAD
+    GET,
+    DEAD,
+    HIT
 }

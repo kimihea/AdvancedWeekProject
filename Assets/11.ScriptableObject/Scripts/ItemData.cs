@@ -20,6 +20,7 @@ public class ItemDateConsumable
     public ConsumableType type;
     public float value;
 }
+[CreateAssetMenu(fileName = "ItemData", menuName = "Item/ItemData")]
 public class ItemData : ScriptableObject
 {
     [Header("Info")]
@@ -36,6 +37,5 @@ public class ItemData : ScriptableObject
     [Header("Consumable")]
     public ItemDateConsumable[] consumables;
 
-    [Header("Equip")]
-    public GameObject equipPrefab;
+
 }
