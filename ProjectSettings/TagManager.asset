@@ -56,3 +56,6 @@ TagManager:
   - name: ExposeHouse
     uniqueID: 3164812007
     locked: 0
+  - name: Sign
+    uniqueID: 875050319
+    locked: 0
