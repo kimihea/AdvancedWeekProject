@@ -18,9 +18,9 @@ public class GameManager : MonoBehaviour
         }
         instance = this;
         DontDestroyOnLoad(gameObject);
-        ShowAlert("게임시작");
         saveManager.Initializer();
-
+        soundManager.Initializer();
+        PlayBGM(BGMEnum.TITLE);
     }
     #region 씬전환
     [SerializeField] private Image FadeBlinding;
@@ -81,6 +81,7 @@ public class GameManager : MonoBehaviour
     Coroutine AlertCoroutine;
     public void ShowAlert(string message)
     {
+        PlaySFX(SFXEnum.Alert);
         AlertText.text = message;  
         AlertObj.SetActive(true);
         if (AlertCoroutine != null) StopCoroutine(AlertCoroutine);
@@ -108,6 +109,17 @@ public class GameManager : MonoBehaviour
         else return false;
     }
     [SerializeField] private SoundManager soundManager;
+    public void PlayBGM(BGMEnum target)
+    {
+        soundManager.PlayBGM(target);
+
+    }
+    public void PlaySFX(SFXEnum target)
+    {
+        soundManager.PlaySFX(target);
+    }
+
+   
     [SerializeField] private DataManager dataManager;
 
 

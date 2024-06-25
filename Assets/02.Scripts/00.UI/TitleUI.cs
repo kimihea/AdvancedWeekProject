@@ -10,10 +10,14 @@ public class TitleUI : MonoBehaviour
     private void Start()
     {
         gm.FadeIn();
+        gm.PlayBGM(BGMEnum.TITLE);
     }
     public void StartNewGame()
     {
+
+
         gm.MoveScene(1);
+        gm.PlaySFX(SFXEnum.UI_CLICK);
     }
 
 }
