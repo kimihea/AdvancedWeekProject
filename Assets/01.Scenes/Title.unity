@@ -959,6 +959,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4885706059839060001, guid: 97a71a6da4d83ab4b8c7e9412ed550a3, type: 3}
+      propertyPath: m_text
+      value: "This Game presented by \uBE44\uD314\uB85C\nPlayer: \uC190\uB450\uD601\nDungeon,
+        Map,UI:\uAE40\uD76C\uD658"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

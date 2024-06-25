@@ -133,7 +133,6 @@ public class GameManager : MonoBehaviour
         EndPanl.SetActive(true);
     }
 
-    [SerializeField] private DataManager dataManager;
 
     #endregion
 
