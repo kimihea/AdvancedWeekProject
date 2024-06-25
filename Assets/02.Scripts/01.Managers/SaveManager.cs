@@ -14,15 +14,18 @@ public class GameData
 
     public GameData()
     {
-        
-    }
+        Gold = 0;
+        stat = new MonsterStatHandler();
+        nowStage = 0;
+    }   
 }
 public class SaveManager : MonoBehaviour
 {
     string path;
-    public void Initializer()
+    public void Initializer(GameData data)
     {
         path = Path.Combine(Application.dataPath, "gameData.json");
+        SaveData(data);
     }
     public void SaveData(GameData data)
     {

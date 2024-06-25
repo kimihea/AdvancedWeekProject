@@ -7,7 +7,8 @@ public enum ItemType
     Weapon,
     Armor,
     Ammo,
-    Food
+    Food,
+    Gold
 }
 public enum ConsumableType
 {

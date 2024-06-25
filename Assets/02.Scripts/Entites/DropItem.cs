@@ -6,6 +6,7 @@ public class DropItem : MonoBehaviour
     public GameObject Item;
     public Transform dropPosition;
     public int amount;
+    public int additionalAmout;
     public float spawnRadius = 1f;
 
     public void Drop()
@@ -14,8 +15,10 @@ public class DropItem : MonoBehaviour
     }
     IEnumerator DropItems()
     {
-        for (int i = 0; i < amount; i++)
+        additionalAmout = GameManager.Instance.nowData.nowStage;
+        for (int i = 0; i < amount+ additionalAmout; i++)
         {
+            
             Vector2 randomPosition = dropPosition.position + (Vector3)Random.insideUnitCircle * spawnRadius;
             Instantiate(Item, randomPosition, Quaternion.identity);
             

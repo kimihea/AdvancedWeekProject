@@ -1,13 +1,20 @@
 
+using TMPro;
 using UnityEngine;
+using static UnityEditor.PlayerSettings;
 
 public class MainUI : MonoBehaviour
 {
     GameManager gm => GameManager.Instance;
+    //public Transform dungeonOutPos;
+    public Transform revivePos;
+    public TextMeshProUGUI gold;
     private void Start()
     {
         gm.FadeIn();
+       
         gm.PlayBGM(BGMEnum.MAIN);
+        Controller.Instacne.transform.position = revivePos.position;
     }
     public void MoveDungeon()
     {

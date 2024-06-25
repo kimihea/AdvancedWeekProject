@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
-        saveManager.Initializer();
+        saveManager.Initializer(nowData);
         soundManager.Initializer();
         PlayBGM(BGMEnum.TITLE);
     }

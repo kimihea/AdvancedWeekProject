@@ -16,5 +16,6 @@ public class MonsterStatHandler : MonoBehaviour
         CurrentStat = new MonsterStat();
         CurrentStat.statsChangeType = baseStats.statsChangeType;
         CurrentStat.maxHealth = baseStats.maxHealth;
+        CurrentStat.maxHealth += GameManager.Instance.nowData.nowStage * 2;
     }
 }
