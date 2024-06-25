@@ -14,6 +14,7 @@ class House : MonoBehaviour
     [SerializeField] string exposeLayer = "ExposeHouse";
     [SerializeField] string maskLayer = "MaskHouse";
 
+    GameManager gm => GameManager.Instance;
     TilemapRenderer[] houseTilemapRenderers;
     private void Awake()
     {
@@ -24,11 +25,13 @@ class House : MonoBehaviour
     {
         houseTilemapRenderers = Util.GetTilemapRenderersByPath(HousePath);
         Util.SetSortingLayer(houseTilemapRenderers, exposeLayer);
+        gm.PlaySFX(SFXEnum.UI_CLOSE);
     }
     private void PlayerExit()
     {
         houseTilemapRenderers = Util.GetTilemapRenderersByPath(HousePath);
         Util.SetSortingLayer(houseTilemapRenderers, maskLayer);
+        gm.PlaySFX(SFXEnum.UI_CLOSE);
     }
     private void OnTriggerEnter2D(Collider2D other)
     {

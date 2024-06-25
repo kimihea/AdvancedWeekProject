@@ -16,6 +16,7 @@ public class Item : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
             if (data.type == ItemType.Gold)
             {
+                gm.PlaySFX(SFXEnum.GET);
                 GetMoney();
                 Destroy(gameObject);
             }

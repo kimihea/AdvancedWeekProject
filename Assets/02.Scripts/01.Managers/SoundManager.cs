@@ -85,5 +85,6 @@ public enum SFXEnum
     ATTACK,
     GET,
     DEAD,
-    HIT
+    HIT,
+    HEAL
 }

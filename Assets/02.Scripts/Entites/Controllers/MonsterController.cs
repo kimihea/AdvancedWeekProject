@@ -28,6 +28,7 @@ public class MonsterController : MonoBehaviour
             float damage = Controller.Instacne.stats.CurrentStat.attackSO.power;
             if (condition.Subtract(damage))
             {
+                GameManager.Instance.PlaySFX(SFXEnum.DEAD);
                 isDead = true;
                 Collider2D collider= GetComponent<Collider2D>();
                 collider.enabled = false;

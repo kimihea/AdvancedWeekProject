@@ -54,6 +54,7 @@ public class Shooting : MonoBehaviour
 
     private void CreateProjectile(RangedAttackSO rangedAttackSO, float angle)
     {
+        GameManager.Instance.PlaySFX(SFXEnum.ATTACK);
         GameObject obj = pool.SpawnFromPool(rangedAttackSO.bulletNameTag);
         obj.transform.position = projectileSpawnPosition.position;
         ProjectileController attackController = obj.GetComponent<ProjectileController>();

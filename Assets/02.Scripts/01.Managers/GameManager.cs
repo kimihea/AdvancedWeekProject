@@ -123,7 +123,9 @@ public class GameManager : MonoBehaviour
     #region util
     public void StopControl()
     {
-        Controller.Instacne.pause = !Controller.Instacne.pause;
+        PlaySFX(SFXEnum.UI_CLICK);
+        if(Controller.Instacne !=null)
+            Controller.Instacne.pause = !Controller.Instacne.pause;
     }
     public GameObject EndPanl;
     public void TheEnd()
