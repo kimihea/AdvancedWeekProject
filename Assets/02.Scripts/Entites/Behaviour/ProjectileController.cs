@@ -59,7 +59,7 @@ internal class ProjectileController : MonoBehaviour
     {
         if (createFx)
         {
-            ParticleSystem particleSystem = DungeonUI.Instance.EffectParticle;
+            ParticleSystem particleSystem = GameManager.Instance.EffectParticle;
             particleSystem.transform.position = position;
             ParticleSystem.EmissionModule em = particleSystem.emission;
             em.SetBurst(0, new ParticleSystem.Burst(0, Mathf.Ceil( 5)));

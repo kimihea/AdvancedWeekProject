@@ -6,7 +6,7 @@ public class DungeonUI : MonoBehaviour
 {
     public static DungeonUI Instance;
     GameManager gm => GameManager.Instance;
-    public ParticleSystem EffectParticle;
+    
     private void Awake()
     {
         if(Instance != null)
@@ -15,7 +15,6 @@ public class DungeonUI : MonoBehaviour
         }
         Instance = this;
 
-        EffectParticle = GameObject.FindGameObjectWithTag("Particle").GetComponent<ParticleSystem>();
     }
     private void Start()
     {
