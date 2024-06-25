@@ -9,7 +9,7 @@ public class Controller : MonoBehaviour
     public event Action<Vector2> OnMoveEvent;
     public event Action<Vector2> OnLookEvent;
     public event Action<AttackSO> OnAttackEvent;
-
+    public event Action OnInteractEvent;
     private float timeSinceLastAttack = float.MaxValue;
     protected bool IsAttacking { get; set; }
     public bool pause = false;
@@ -60,5 +60,9 @@ public class Controller : MonoBehaviour
     public void CallAttackEvent(AttackSO attackSO)
     {
         OnAttackEvent?.Invoke(attackSO);
+    }
+    public void CallInteractEvent()
+    {
+        OnInteractEvent?.Invoke();
     }
 }

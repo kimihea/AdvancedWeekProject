@@ -19,7 +19,7 @@ public class PlayerStateController : MonoBehaviour
     }
     public void EnterDungeon()
     {
-        gm.nowData.fatigue += 10f;
+        gm.nowData.fatigue += 30f;
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {

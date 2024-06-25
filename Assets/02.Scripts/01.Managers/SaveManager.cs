@@ -9,14 +9,12 @@ using System.IO;
 public class GameData
 {
     public int Gold;
-    public MonsterStatHandler stat;
     public int nowStage;
     public float fatigue;
     public float maxFatigue;
     public GameData()
     {
         Gold = 0;
-        stat = new MonsterStatHandler();
         nowStage = 0;
         fatigue = 0;
         maxFatigue = 100;

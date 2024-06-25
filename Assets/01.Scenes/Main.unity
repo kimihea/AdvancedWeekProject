@@ -1971,6 +1971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   revivePos: {fileID: 372655429}
+  dungeonSign: {fileID: 1298107743}
   gold: {fileID: 0}
 --- !u!4 &383181754
 Transform:

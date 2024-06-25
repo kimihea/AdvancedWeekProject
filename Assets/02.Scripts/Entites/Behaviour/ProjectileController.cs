@@ -7,7 +7,7 @@ internal class ProjectileController : MonoBehaviour
 
     private bool isReady;
 
-    private Rigidbody2D rigidbody;
+    private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     private TrailRenderer trailRenderer;
 
@@ -19,7 +19,7 @@ internal class ProjectileController : MonoBehaviour
     private void Awake()
     {
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        rigidbody = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
         trailRenderer = GetComponent<TrailRenderer>();
     }
 
@@ -37,7 +37,7 @@ internal class ProjectileController : MonoBehaviour
             DestroyProjectile(transform.position, false);
         }
 
-        rigidbody.velocity = direction * attackData.speed;
+        rb.velocity = direction * attackData.speed;
     }
 
 
@@ -79,6 +79,8 @@ internal class ProjectileController : MonoBehaviour
     {
         if (IsLayerMatched(levelCollisionLayer.value, collision.gameObject.layer))
         {
+
+
             Vector2 destroyPosition = collision.ClosestPoint(transform.position) - direction * .2f;
             DestroyProjectile(destroyPosition, fxOnDestory);
         }

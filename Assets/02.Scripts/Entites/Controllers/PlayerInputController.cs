@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerInputController : Controller
 {
-    private Camera camera;
+    private new Camera camera;
 
     protected override void Awake()
     {
@@ -29,5 +29,12 @@ public class PlayerInputController : Controller
     public void OnFire(InputValue value)
     {
         IsAttacking = value.isPressed;
+    }
+    public void OnInteract(InputValue value)
+    {
+        if(value.isPressed)
+        {
+            CallInteractEvent();
+        }
     }
 }
