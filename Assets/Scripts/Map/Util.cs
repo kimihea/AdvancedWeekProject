@@ -14,6 +14,7 @@ public class Util : MonoBehaviour
         {
             return houseInside.GetComponentsInChildren<TilemapRenderer>();
         }
+        Debug.Log("PathWrong");
         return new TilemapRenderer[0];
     }
 
