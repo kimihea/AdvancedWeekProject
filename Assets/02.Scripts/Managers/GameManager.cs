@@ -7,16 +7,15 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance;
-
+    public static GameManager Instance;
     private void Awake()
     {
-        if(instance != null)
+        if(Instance != null)
         {
             Destroy(gameObject);
             return;
         }
-        instance = this;
+        Instance = this;
         DontDestroyOnLoad(gameObject);
         saveManager.Initializer();
         soundManager.Initializer();
@@ -95,6 +94,7 @@ public class GameManager : MonoBehaviour
     #endregion
     [SerializeField] private SaveManager saveManager;
     public GameData nowData;
+    public ParticleSystem EffectParticle;
     public void SaveGame()
     {
         saveManager.SaveData(nowData);
@@ -118,8 +118,12 @@ public class GameManager : MonoBehaviour
     {
         soundManager.PlaySFX(target);
     }
+    public void StopControl()
+    {
+        Controller.Instacne.pause = !Controller.Instacne.pause;
+    }
+    
 
-   
     [SerializeField] private DataManager dataManager;
 
 

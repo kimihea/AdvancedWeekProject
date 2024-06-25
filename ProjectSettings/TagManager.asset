@@ -14,7 +14,7 @@ TagManager:
   - Enemy
   - Level
   - Player
-  - 
+  - House
   - 
   - 
   - 
@@ -58,4 +58,7 @@ TagManager:
     locked: 0
   - name: Sign
     uniqueID: 875050319
+    locked: 0
+  - name: Player
+    uniqueID: 1993098837
     locked: 0

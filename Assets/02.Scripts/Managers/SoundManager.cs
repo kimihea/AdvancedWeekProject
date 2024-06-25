@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class SoundManager : MonoBehaviour
 {
@@ -17,8 +18,10 @@ public class SoundManager : MonoBehaviour
         {
             SFXdicts.Add(t.myEnum, t.myClip);
         }
+        ConnectAudioMixer();
     }
     [SerializeField] private AudioSource BGMsource;
+    AudioMixer audioMixer;
     [SerializeField] private AudioSource SFXsource;
 
     [SerializeField]private Dictionary<BGMEnum, AudioClip> BGMdicts;
@@ -34,6 +37,32 @@ public class SoundManager : MonoBehaviour
     public void PlaySFX(SFXEnum target)
     {
         SFXsource.PlayOneShot(SFXdicts[target]);
+    }
+    private void ConnectAudioMixer()
+    {
+        audioMixer = Resources.Load<AudioMixer>("NewAudioMixer");
+        if (audioMixer != null)
+        {
+            BGMsource.outputAudioMixerGroup = audioMixer.FindMatchingGroups("Master")[1];
+            SFXsource.outputAudioMixerGroup = audioMixer.FindMatchingGroups("Master")[2];
+        }
+    }
+    public void Mute()
+    {
+        float masterVol;
+        if (audioMixer.FindMatchingGroups("Master")[0].audioMixer.GetFloat("masterVolume", out masterVol))
+        {
+            if (masterVol == 0f)
+            {
+                audioMixer.FindMatchingGroups("Master")[0].audioMixer.SetFloat("masterVolume", -80f);
+
+            }
+            else
+            {
+                audioMixer.FindMatchingGroups("Master")[0].audioMixer.SetFloat("masterVolume", 0f);
+
+            }
+        }
     }
 }
 [Serializable]

@@ -32,6 +32,8 @@ public class Shooting : MonoBehaviour
 
     private void OnShoot(AttackSO attackSO)
     {
+        if (controller.pause)
+            return;
         RangedAttackSO rangedAttackSO = attackSO as RangedAttackSO;
         if (rangedAttackSO == null) return;
 

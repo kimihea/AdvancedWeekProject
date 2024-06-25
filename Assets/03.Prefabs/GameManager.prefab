@@ -248,6 +248,8 @@ MonoBehaviour:
     myClip: {fileID: 8300000, guid: 1fe0a330a68b44744b72fb401ee9e330, type: 3}
   - myEnum: 0
     myClip: {fileID: 8300000, guid: 04dd0c3c287cde04fb49b7b19048c166, type: 3}
+  - myEnum: 2
+    myClip: {fileID: 8300000, guid: ede330d7f02a43d45bcd847b90b93f46, type: 3}
   SFXs:
   - myEnum: 0
     myClip: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}

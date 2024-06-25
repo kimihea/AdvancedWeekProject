@@ -5,18 +5,27 @@ using UnityEngine;
 
 public class Controller : MonoBehaviour
 {
+    public static Controller Instacne; 
     public event Action<Vector2> OnMoveEvent;
     public event Action<Vector2> OnLookEvent;
     public event Action<AttackSO> OnAttackEvent;
 
     private float timeSinceLastAttack = float.MaxValue;
     protected bool IsAttacking { get; set; }
+    public bool pause = false;
 
     protected CharacterStatHandler stats { get; private set; }
 
     protected virtual void Awake()
     {
         stats = GetComponent<CharacterStatHandler>();
+        if (Instacne != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instacne = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     protected virtual void Update()

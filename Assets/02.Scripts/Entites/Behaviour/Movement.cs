@@ -34,7 +34,7 @@ public class Movement : MonoBehaviour
     private void ApplyMovement(Vector2 direction)
     {
         direction = direction * characterStatHandler.CurrentStat.speed;
-
+        if (controller.pause == true) direction *= 0f;
         movementRigidbody.velocity = direction;
     }
 }

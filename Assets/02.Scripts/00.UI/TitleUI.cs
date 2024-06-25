@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class TitleUI : MonoBehaviour
 {
-    GameManager gm => GameManager.instance;
+    GameManager gm => GameManager.Instance;
     private void Start()
     {
         gm.FadeIn();

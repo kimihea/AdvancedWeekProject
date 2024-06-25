@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class MainUI : MonoBehaviour
 {
-    GameManager gm => GameManager.instance;
+    GameManager gm => GameManager.Instance;
     private void Start()
     {
         gm.FadeIn();

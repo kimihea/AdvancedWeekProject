@@ -22,7 +22,8 @@ public class AimRotation : MonoBehaviour
 
     public void OnAim(Vector2 direction)
     {
-        RotateArm(direction);
+        if(!controller.pause)
+            RotateArm(direction);
     }
 
     private void RotateArm(Vector2 direction)
