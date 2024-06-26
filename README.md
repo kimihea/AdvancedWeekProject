@@ -7,7 +7,7 @@
 ## 목차
 + [프로젝트 소개](https://github.com/kimihea/AdvancedWeekProject/edit/main/README.md#-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%86%8C%EA%B0%9C)
 + [사용기술 스택](https://github.com/kimihea/AdvancedWeekProject/edit/main/README.md#%EC%82%AC%EC%9A%A9%EA%B8%B0%EC%88%A0-%EC%8A%A4%ED%83%9D)
-+ [트러블 슈팅](https://github.com/kimihea/AdvancedWeekProject/edit/main/README.md#%EB%A7%8C%EB%93%A0-%EC%82%AC%EB%9E%8C%EB%93%A4)
++ [트러블 슈팅](https://github.com/kimihea/AdvancedWeekProject?tab=readme-ov-file#trobule-shooting)
 + [만든 사람들](https://github.com/kimihea/AdvancedWeekProject/edit/main/README.md#%EB%A7%8C%EB%93%A0-%EC%82%AC%EB%9E%8C%EB%93%A4)
 ---
 ### 👨‍🏫 프로젝트 소개
