@@ -15,6 +15,9 @@
 
 :file_folder: [TeamNotion](https://teamsparta.notion.site/81d8c98db0374f2182268fdf725a2637)
 
+
+![비팔로사냥](https://github.com/kimihea/AdvancedWeekProject/blob/main/20240626_094350.png)
+
 **던전에 도전해서 더 강력해지세요**
 
 **던전에서 몬스터를 사냥하고 얻은 전리품으로 강해지는 게임**
