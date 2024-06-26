@@ -5,10 +5,10 @@
 
 
 ## 목차
-+ [프로젝트 소개](https://github.com/kimihea/AdvancedWeekProject?tab=readme-ov-file#프로젝트 소개)
-+ [사용기술 스택](https://github.com/kimihea/AdvancedWeekProject?tab=readme-ov-file#사용기술 스택)
++ [프로젝트 소개](https://github.com/kimihea/AdvancedWeekProject?tab=readme-ov-file#프로젝트-소개)
++ [사용기술 스택](https://github.com/kimihea/AdvancedWeekProject?tab=readme-ov-file#사용기술-스택)
 + [트러블 슈팅](https://github.com/kimihea/AdvancedWeekProject?tab=readme-ov-file#trobule-shooting)
-+ [만든 사람들](https://github.com/kimihea/AdvancedWeekProject?tab=readme-ov-file#만들 사람들)
++ [만든 사람들](https://github.com/kimihea/AdvancedWeekProject?tab=readme-ov-file#만든-사람들)
 ---
 ### 👨‍🏫 프로젝트 소개
 🔴[YOUTUBE](https://www.youtube.com/watch?v=2xg_Z5UV2tU)
